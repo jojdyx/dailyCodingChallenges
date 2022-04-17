@@ -34,3 +34,29 @@ var championsLeagueGoals = 10
 var copaDelReyGoals = 5
 
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals
+
+// 8 kyu
+// Grasshopper - Terminal game move function
+// Terminal game move function
+// In this game, the hero moves from left to right. The player rolls the dice and moves the number of spaces indicated by the dice two times.
+// Create a function for the terminal game that takes the current position of the hero and the roll (1-6) and return the new position.
+// Example:
+// move(3, 6) should equal 15
+function move (position, roll) {
+    // return the new position
+    return position + roll * 2;
+  }
+
+// 8 kyu
+// Price of Mangoes
+// There's a "3 for 2" (or "2+1" if you like) offer on mangoes. For a given quantity and price (per mango), calculate the total cost of the mangoes.
+// Examples
+// mango(3, 3) ==> 6    # 2 mangoes for 3 = 6; +1 mango for free
+// mango(9, 5) ==> 30   # 6 mangoes for 5 = 30; +3 mangoes for free
+function mango(quantity, price){
+    if(quantity%3 == 0){
+      return quantity/3*2*price
+    }else{
+      return (quantity%3*price) + (quantity-quantity%3)/3*2*price
+    }
+  }
