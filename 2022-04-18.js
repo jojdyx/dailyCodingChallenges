@@ -24,3 +24,53 @@ var countSheep = function (num){
     }
       return str
   }
+
+// 8 kyu
+// Count the Monkeys!
+// You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
+// As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+// For example:
+// monkeyCount(10) // --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// monkeyCount(1) // --> [1]
+function monkeyCount(n) {
+    // your code here
+      let arr = []
+      for (let i = 1; i<= n ; i++){
+          arr.push(i)
+      }    
+        return arr
+    }
+
+// 8 kyu
+// What is between?
+// Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
+// For example:
+// a = 1
+// b = 4
+// --> [1, 2, 3, 4]
+function between(a, b) {
+    // your code here
+    let arr = [];
+    for (let i = a; i<=b; i++){
+      arr.push(i)
+    }
+      return arr
+  }
+
+// 8 kyu
+// Grasshopper - Summation
+// Summation
+// Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+// For example:
+// summation(2) -> 3
+// 1 + 2
+// summation(8) -> 36
+// 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+var summation = function (num) {
+    // Code here
+    let sum=0
+    for (let i = 1; i<=num; i++){
+        sum += i
+    }
+      return sum
+  }
