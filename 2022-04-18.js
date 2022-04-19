@@ -74,3 +74,20 @@ var summation = function (num) {
     }
       return sum
   }
+
+// 8 kyu
+// Power
+// The goal is to create a function 'numberToPower(number, power)' that "raises" the number up to power (ie multiplies number by itself power times).
+// Examples
+// numberToPower(3,2)  // -> 9 ( = 3 * 3 )
+// numberToPower(2,3)  // -> 8 ( = 2 * 2 * 2 )
+// numberToPower(10,6) // -> 1000000
+// Note: Math.pow and some other Math functions like eval() and ** are disabled.
+function numberToPower(number, power){
+  // Code here
+  let num = 1;
+  for (let i = 1; i<=power ; i++){ //how many time the for loop go
+     num*= number  // num = num * number, the number * 1 equal number it self then times itself
+  }
+  return num
+}
