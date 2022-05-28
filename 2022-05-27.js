@@ -46,3 +46,15 @@ function fixTheMeerkat(arr) {
 function stringy(size) {
     return size%2==0 ? '10'.repeat(size/2) : '10'.repeat(size/2)+'1'
 }
+
+// 8 kyu
+// FIXME: Replace all dots
+// The code provided is supposed replace all the dots . in the specified String str with dashes -
+// But it's not working properly.
+// Task
+// Fix the bug so we can all go home early.
+// Notes
+// String str will never be null.
+var replaceDots = function(str) {
+    return str.replace(/[.]/g, '-');
+}
