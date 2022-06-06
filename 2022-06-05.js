@@ -29,3 +29,11 @@ function generateRange(min, max, step){
     }
       return arr
 }
+
+// 8 kyu
+// !a == a ?!
+// You task to pass only this tests :
+// a == false
+// !a == false
+// a == !a
+const a = '0'
