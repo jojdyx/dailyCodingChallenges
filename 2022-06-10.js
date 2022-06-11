@@ -24,3 +24,10 @@ function stairsIn20(s){
 function twoHighest(arr) {
     return arr.filter((e,i,a)=> a.indexOf(e)==i).sort((a,b) => b-a).slice(0,2)
 }
+
+// 8 kyu
+// Regexp Basics - is it a digit?
+// Implement String#digit? (in Java StringUtils.isDigit(String)), which should return true if given object is a digit (0-9), false otherwise.
+String.prototype.digit = function() {
+    return /^\d$/.test(this)
+}
