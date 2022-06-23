@@ -21,3 +21,11 @@ function noOdds( values ){
 function inAscOrder(arr) {
     return arr.join() === arr.sort((a,b)=>a-b).join() ? true : false
 }
+
+// 7 kyu
+// Small enough? - Beginner
+// You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false.
+// You can assume all values in the array are numbers.
+function smallEnough(a, limit){
+    return a.sort((a,b)=>a-b).slice(-1) <= limit ? true : false
+}
